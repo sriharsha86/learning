@@ -94,3 +94,16 @@ print(mystery(4))
 
 # its a recursive function and arguemnt given to it 4
 # so the answer would be 4 + 3 + 2 + 1 = 10
+
+
+""" 5 PROBLEMS REALTED TO RECURSION """
+
+'''Write a recursive function to compute the factorial of a given number n
+    Example : factorial(5) -> 120'''
+
+def factorial(n):
+    if n == 0 or n == 1:
+        return 1
+    return n * factorial(n - 1)
+
+print(factorial(3))
