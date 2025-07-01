@@ -46,3 +46,14 @@ def fibonacci(n):
     return fibonacci(n - 1) + fibonacci(n - 2)
 
 print(fibonacci(6))
+
+'''What is the difference between parameters and arguements in a function?'''
+#Parameters are variable listed in the function defination
+#Arguements are values passed to the function calling it
+
+def greet(name): # name is a parameter here
+    print("Hello", name)
+
+greet("Alice") # "Alice" is an arguement
+
+
