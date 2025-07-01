@@ -119,3 +119,13 @@ def fibonacci(n) :
     
 for i in range(7):
     print(fibonacci(i), end = " ")
+
+
+'''Write a recursive function that reverses a string'''
+
+def reverse(s):
+    if len(s) == 0:
+        return ""
+    return s[-1] + reverse(s[:-1])
+
+print(reverse("hello"))
