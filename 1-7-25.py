@@ -32,7 +32,7 @@ print(is_prime(12))
     Recursion is when a function calls itself to solve a smaller instance of the problem'''
 
 def factorial(n):
-    if n === 0 or n == 1:
+    if n == 0 or n == 1:
         return 1
     return n * factorial(n-1)
 
@@ -64,3 +64,11 @@ print(power(3))  #output : 9 (since there is a default parameter)
 print(power(3, 3)) #output : 27 (since arguemnt is given)
 
 
+'''Can function retrun multiple values? Demonstrate'''
+#yes, using tuple (implicit)
+
+def get_stats(x, y):
+    return x + y, x-y
+
+add, sub = get_stats(10, 5)
+print(add, sub) # output : 15 5
