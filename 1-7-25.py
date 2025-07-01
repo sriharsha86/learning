@@ -138,3 +138,13 @@ def sum_digits(n):
     return (n % 10) + sum_digits(n // 10)
 
 print(sum_digits(1234))
+
+
+'''Write a recursive function to find the Greatest Common Divisor of two numbers'''
+
+def gcd(a, b):
+    if b == 0:
+        return a
+    return gcd(b, a % b)
+
+print(gcd(48, 18))
