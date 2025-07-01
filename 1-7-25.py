@@ -72,3 +72,12 @@ def get_stats(x, y):
 
 add, sub = get_stats(10, 5)
 print(add, sub) # output : 15 5
+
+'''Write a recursive function to find the sum of first n natural numbers'''
+
+def sum_natural(n):
+    if n == 1 :
+        return 1
+    return n + sum_natural(n - 1)
+
+print(sum_natural(5)) #Output : 15
