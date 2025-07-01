@@ -26,3 +26,16 @@ def is_prime(n):
     return True
 
 print(is_prime(12))
+
+
+'''What is recursion? Give an example
+    Recursion is when a function calls itself to solve a smaller instance of the problem'''
+
+def factorial(n):
+    if n === 0 or n == 1:
+        return 1
+    return n * factorial(n-1)
+
+print(factorial(5))
+
+
