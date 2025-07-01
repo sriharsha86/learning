@@ -56,4 +56,11 @@ def greet(name): # name is a parameter here
 
 greet("Alice") # "Alice" is an arguement
 
+'''Write a function with a default parameter'''
+def power(base, exponent=2):
+    return base ** exponent
+
+print(power(3))  #output : 9 (since there is a default parameter)
+print(power(3, 3)) #output : 27 (since arguemnt is given)
+
 
